@@ -38,7 +38,7 @@ def media_input():
 
     gallery = col1.button("🖼️ Upload a picture", type= "primary" if  st.session_state["selected"] == "image" else "secondary")
     camera =  col2.button("🤳 Take the picture", type= "primary" if  st.session_state["selected"] == "camera" else "secondary")
-    video =  col3.button("📹 Add the video of food", type= "primary" if  st.session_state["selected"] == "video" else "secondary")
+    video =  col3.button("📹 Add the video", type= "primary" if  st.session_state["selected"] == "video" else "secondary")
     if gallery or st.session_state["selected"] == "image":
         if(st.session_state["selected"] !=  "image"):
             st.session_state["selected"] = "image"
